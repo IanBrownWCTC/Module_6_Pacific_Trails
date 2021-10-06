@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pacific Trails Resort:: Reservations</title>
+        <meta name = "description" content = "This is the signup page to schedule a time to and visit us!">
+        <meta name = "keywords" content = "Pacific Trails, Pacific Trails Resort, resort, Pacific resort, Pacific Trails signup">
+        <link rel = "stylesheet" href = "pacific.css">
+    </head>
+    <body>
+        <div id = "wrapper">
+            <header>
+                <h1>Pacific Trails Resort</h1>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "yurts.html">Yurts</a></li>
+                    <li><a href = "activities.html">Activities</a></li>
+                    <li><a href = "reservations.html">Reservations</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <h2>Reservations at Pacific Trails</h2>
+                <h3>Contact Us Today!</h3>
+                <p>Required fields are marked with an asterisk *.</p>
+                <form>
+                    <label for = "fname">* First Name:</label>
+                    <input type = "text" id = "fname" name = "myFName" required = required>
+                    <label for = "lname">* Last Name:</label>
+                    <input type = "text" id = "lname" name = "myLName" required = required>
+                    <label for = "email">* E-Mail Address:</label>
+                    <input type = "email" id = "email" name = "email" required>
+                    <label for = "phonenumber">Phone Number:</label>
+                    <input type = "text" id = "phonenumber" name = "phoneNumber" maxlength = "12">
+                    <label for = "calender">Arrival Date:</label>
+                    <input type = "date" id = "calender" name = "date">
+                    <label for = "nights">Nights:</label>
+                    <select id = "nights" name = "nights">
+                        <option value = "1">1</option>
+                        <option value = "2">2</option>
+                        <option value = "3">3</option>
+                        <option value = "4">4</option>
+                        <option value = "5">5</option>
+                        <option value = "6">6</option>
+                        <option value = "7">7</option>
+                        <option value = "8">8</option>
+                        <option value = "9">9</option>
+                        <option value = "10">10</option>
+                        <option value = "11">11</option>
+                        <option value = "12">12</option>
+                        <option value = "13">13</option>
+                        <option value = "14">14</option>
+                    </select>
+                    <label for = "comments">* Comments:</label>
+                    <textarea id = "comments" name = "myComments" rows = "2" cols = "30" required></textarea>
+                    <input type = "submit" value = "Submit">
+                </form>
+            </main>
+            <div id = "#contact">
+                <span class = "resort"> Trails Resort </span><br>
+                12010 Pacific Trails Road <br>
+                Zephyr, CA 95555 <br>
+                888-555-5555 <br>
+            </div>
+            <footer>
+                <br>
+                    Copyright &copy; 2020 Pacific Trails Resort <br>
+                    <a href = "mailto:Ian@Brown.com">Ian@Brown.com</a>
+            </footer>
+        </div>
+    </body>
+</html>

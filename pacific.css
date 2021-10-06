@@ -1,0 +1,209 @@
+* {box-sizing: border-box;}
+body {background-color: #eaeaea;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+header {background-color: #002171;
+    color: #ffffff;
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: center;
+    }
+header:link {text-decoration: none; color: #ffffff}
+header:visited {text-decoration: none; color: #ffffff}
+header:hover {text-decoration: none; color: #90c7e3}
+nav {padding: 0;
+    font-size: 120%;
+    text-align: center;
+    }
+/*
+I am not sure why, but the nav always displays the nav links as
+centered even though they are later set to be left justified.
+ */
+nav a {
+    text-decoration: none;
+    transition: 3s ease-out color;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+    }
+nav li {
+    border-bottom: 1px solid darkblue;
+    color: #5c7fa3;
+}
+nav li:link {color: #5c7fa3}
+nav li:visited {color: #344873}
+nav li:hover {color: #a52a2a}
+main {
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: block;
+    background-color: white;
+    overflow: auto;
+    }
+h1 {margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: .25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: Georgia, Times New Roman, sans-serif;}
+h2 {color: #1976d2;
+    font-family: Georgia, Times New Roman, sans-serif;
+    text-shadow: 1px 1px #cccccc}
+h3 {font-family: Georgia, Times New Roman, sans-serif;
+    color: #000033;}
+main ul {list-style-image: url(marker.gif);}
+dt {color: #002171}
+footer {font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, Times New Roman, sans-serif;
+    padding: 2em;
+    background-color: white;
+    }
+.resort {color: #1976d2;
+    font-style: bold;}
+#wrapper {
+    border-color: #000033;
+    background: linear-gradient(to bottom, #ffffff, #90c7e3);
+    }
+#contact {
+    font-size: 90%;
+    background: white;
+}
+#homehero {
+
+    height: 300px;
+    background-image: url(coast2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+#yurthero {
+
+    height: 300px;
+    background-image: url(yurt.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#trailhero {
+
+    height: 300px;
+    background-image: url(trail.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+table {
+    border: 2px solid #3399cc;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+    padding: 0.5em;
+    border: 2px solid #3399cc;
+}
+th {
+    padding: 0.5em;
+    border: 2px solid #3399cc;
+}
+.text {
+    text-align: left;
+}
+tr:nth-of-type(odd) {
+    background-color: #f5fafc;
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+input, textarea {
+    margin-bottom: 0.5em;
+}
+video, embed {
+    float: right;
+    padding-left: 20px;
+}
+@media only screen and (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: auto;
+        width: 80%;
+    }
+    nav li {
+        border-bottom: none;
+        margin: auto;
+    }
+    .content main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .content h2 {
+        grid-row: 1/2;
+        grid-column: 1/5;
+    }
+    .content section {
+        grid-row: 2/3;
+        grid-column: auto;
+        margin: 1em;
+    }
+    .content #special {
+        grid-row: auto;
+        grid-column: 1/5;
+        padding: 1em;
+    }
+    .content footer {
+        grid-row: auto;
+        grid-column: 1/5;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    nav {
+        text-align: left;
+        padding-left: 1em;
+    }
+    nav ul {
+        padding-top: 1em;
+        flex-direction: column;
+    }
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid darkblue;
+        box-shadow: 1px 1px darkblue;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 180px 1fr;
+    }
+    #wrapper header {
+        grid-row: auto;
+        grid-column: 1/4;
+    }
+    #wrapper nav {
+        grid-row: 2/4;
+        grid-column: 1;
+    }
+    #wrapper div {
+        grid-row: auto;
+        grid-column: 2;
+    }
+    #wrapper main {
+        grid-row: auto;
+        grid-column: 2;
+    }
+    #wrapper footer {
+        grid-row: auto;
+        grid-column: 2/4;
+    }
+    .content #special {
+        grid-row: auto;
+        grid-column: 2;
+        background-color: #ffffff;
+    }
+}
